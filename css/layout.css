@@ -22,6 +22,12 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
+.promo-block parallax-window{
+  height: 10%;
+  width: 25px;
+}
+
+
 html {
   overflow-x: hidden;
 }
