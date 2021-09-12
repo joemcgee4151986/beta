@@ -715,6 +715,7 @@
 }
 .icon-social-twitter:before {
   content: "\e009";
+  color: black;
 }
 .icon-social-facebook:before {
   content: "\e00b";
@@ -724,12 +725,14 @@
 }
 .icon-social-linkedin:before {
   content: "\e60a";
+  color: black;
 }
 .icon-social-pinterest:before {
   content: "\e60b";
 }
 .icon-social-github:before {
   content: "\e60c";
+  color: black;
 }
 .icon-social-google:before {
   content: "\e60d";

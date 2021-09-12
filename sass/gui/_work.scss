@@ -4,19 +4,39 @@
 
 /* Overlay */
 .work {
-	@include position(relative);
-	display: block;
+	@include position(absolute);
+	display: flex;
+		align-items: center;
+
 	
+		  .column {
+			flex: 33.33%;
+			padding:10,10px;
+		  }
+		  
+		  .column img {
+			margin-top: 8px;
+			vertical-align: middle;
+			width: 100%;
+		  }
+	}
 	.work-overlay {
 		@include position(relative);
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		
+		
 
 		&:before {
 	        @include position(absolute, $top: 0, $left: 0);
 	        @include size(100%);
 	        @include bg-opacity(#000, 0);
 	        content: " ";
+			flex-direction: row-reverse;
 	        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+			display: flex;
+		align-items: center;
 	    }
 	}
 
@@ -28,7 +48,7 @@
 		    }
 		}
 	}
-}
+
 
 /* Popup */
 .work {
@@ -71,6 +91,8 @@
 				&-divider {
 					border-right: none;
 					border-bottom: 1px solid lighten($color-subtitle, 15%);
+					display:flex;
+					align-items: center;
 				}
 			}
 		}
